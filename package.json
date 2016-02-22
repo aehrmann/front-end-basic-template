@@ -1,0 +1,19 @@
+{
+  "name": "front-end-npm-basic",
+  "version": "1.0.0",
+  "description": "A boilerplate template for front-end development using NPM scripts for automation, based on Damon Bauer's post on CSS-Tricks.com",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aehrmann/front-end-basic-template.git"
+  },
+  "author": "Ari Ehrmann",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aehrmann/front-end-basic-template/issues"
+  },
+  "homepage": "https://github.com/aehrmann/front-end-basic-template#readme"
+}
