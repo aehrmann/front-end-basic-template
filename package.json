@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "scss": "node-sass --output-style compresses -o dist/css src/scss"
+    "scss": "node-sass --output-style compresses -o dist/css src/scss",
+    "autoprefixer": "postcss -u autoprefixer -r dist/css/*"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,8 @@
   },
   "homepage": "https://github.com/aehrmann/front-end-basic-template#readme",
   "devDependencies": {
-    "node-sass": "^3.4.2"
+    "autoprefixer": "^6.3.3",
+    "node-sass": "^3.4.2",
+    "postcss-cli": "^2.5.1"
   }
 }
