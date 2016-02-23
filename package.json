@@ -4,7 +4,8 @@
   "description": "A boilerplate template for front-end development using NPM scripts for automation, based on Damon Bauer's post on CSS-Tricks.com",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --output-style compresses -o dist/css src/scss"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/aehrmann/front-end-basic-template/issues"
   },
-  "homepage": "https://github.com/aehrmann/front-end-basic-template#readme"
+  "homepage": "https://github.com/aehrmann/front-end-basic-template#readme",
+  "devDependencies": {
+    "node-sass": "^3.4.2"
+  }
 }
