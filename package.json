@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "scss": "node-sass --output-style compresses -o dist/css src/scss",
     "autoprefixer": "postcss -u autoprefixer -r dist/css/*",
-    "uglify": "mkdir -p dist/js && uglifyjs src/js/*.js -m -o dist/js/app.js && uglifyjs src/js/*.js -m -c -o dist/js/app.js"
+    "uglify": "mkdir -p dist/js && uglifyjs src/js/*.js -m -o dist/js/app.js && uglifyjs src/js/*.js -m -c -o dist/js/app.js",
+    "serve": "browser-sync start --server --files 'dist/css/*.css, dist/js/*.js'"
   },
   "repository": {
     "type": "git",
@@ -21,6 +22,7 @@
   "homepage": "https://github.com/aehrmann/front-end-basic-template#readme",
   "devDependencies": {
     "autoprefixer": "^6.3.3",
+    "browser-sync": "^2.11.1",
     "node-sass": "^3.4.2",
     "postcss-cli": "^2.5.1",
     "uglify-js": "^2.6.2"
