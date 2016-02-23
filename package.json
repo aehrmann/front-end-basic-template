@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "scss": "node-sass --output-style compresses -o dist/css src/scss",
-    "autoprefixer": "postcss -u autoprefixer -r dist/css/*"
+    "autoprefixer": "postcss -u autoprefixer -r dist/css/*",
+    "uglify": "mkdir -p dist/js && uglifyjs src/js/*.js -m -o dist/js/app.js && uglifyjs src/js/*.js -m -c -o dist/js/app.js"
   },
   "repository": {
     "type": "git",
@@ -21,6 +22,7 @@
   "devDependencies": {
     "autoprefixer": "^6.3.3",
     "node-sass": "^3.4.2",
-    "postcss-cli": "^2.5.1"
+    "postcss-cli": "^2.5.1",
+    "uglify-js": "^2.6.2"
   }
 }
