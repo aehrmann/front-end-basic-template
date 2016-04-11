@@ -4,11 +4,10 @@
   "description": "A boilerplate template for front-end development using NPM scripts for automation, based on Damon Bauer's post on CSS-Tricks.com",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "scss": "node-sass --output-style compresses -o dist/css src/scss",
     "autoprefixer": "postcss -u autoprefixer -r dist/css/*",
     "uglify": "mkdir -p dist/js && uglifyjs src/js/*.js -m -o dist/js/app.js && uglifyjs src/js/*.js -m -c -o dist/js/app.js",
-    "serve": "browser-sync start --server --files 'dist/css/*.css, dist/js/*.js'",
+    "serve": "browser-sync start --server --files 'index.html, dist/css/*.css, dist/js/*.js'",
     "watch:css": "onchange 'src/scss/*.scss' -- npm run scss",
     "watch:js": "onchange 'src/js/*.js' -- npm run js",
     "watch:all": "parallelshell 'npm run serve' 'npm run watch:css' 'npm run watch:js'"
